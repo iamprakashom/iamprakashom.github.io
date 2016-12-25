@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Avinash Jain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	</head>
+	<body class="landing">
+
+	<script>
+		// Returns true if the specified element has been scrolled into the viewport.
+		function isElementInViewport(elem) {
+			var $elem = $(elem);
+
+			// Get the scroll position of the page.
+			var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+			var viewportTop = $(scrollElem).scrollTop();
+			var viewportBottom = viewportTop + $(window).height();
+
+			// Get the position of the element on the page.
+			var elemTop = Math.round( $elem.offset().top );
+			var elemBottom = elemTop + $elem.height();
+
+			return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+		}
+
+		// Check if it's time to start the animation.
+		function checkAnimation() {
+			var $elem = $('.style2 .spotlight .image .barone');
+            var $elem2 = $('.style2 .spotlight .image .bartwo');
+            var $elem3 = $('.style2 .spotlight .image .barthree');
+
+			// If the animation has already been started
+			if ($elem.hasClass('graphic-design')) return;
+			if (isElementInViewport($elem)) {
+				// Start the animation
+				$elem.addClass('graphic-design');
+                $elem2.addClass('html-css');
+                $elem3.addClass('jquery');
+            }
+
+		}
+
+		// Capture scroll events
+		$(window).scroll(function(){
+
+			checkAnimation();
+
+		});
+
+	</script>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1>Avinash Jain</h1>
+						<nav id="nav">
+							<!--
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul> -->
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Avinash Jain</h2>
+
+							<p>Programmer, Student, Entrepreneur</p>
+
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>About Me</h2>
+								<p>Hi there! I'm a 15 year old developer and coding is my passion. I've taught over <a href="https://www.udemy.com/user/avinashjain5/" class="hvr-underline-from-center">
+									<b>50,000 students</b></a> all around
+									the World how to program. I've made and published numerous apps and websites. Feel free to contact me for any
+									work, hackathons or internships!</p>
+							</header>
+							<ul class="icons major">
+								<li><a href="https://www.linkedin.com/in/avinashj1" target="_blank"><span class="icon fa-linkedin major style1"><span class="label">Lorem</span></span></a></li>
+								<li><a href="https://github.com/TheCurryMan" target="_blank"><span class="icon fa-github major style2"><span class="label">Ipsum</span></span></a></li>
+								<li><a href="resume.html" target="_blank"><span class="icon fa-file-text major style3"><span class="label">Dolor</span></span></a></li>
+								<li><a href="mailto:avinashkalpitjain@gmail.com" target="_blank"><span class="icon fa-envelope major style3"><span class="label">Dolor</span></span></a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+								<div class="image"><ul id="skill">
+								<div><p> Swift</p><li><span class="one bar barone "></span></li></div>
+								<div><p> Python</p><li><span class="one bar barone "></span></li></div>
+								<div><p> HTML/CSS</p><li><span class="bar bartwo"></span></li></div>
+								<div><p> Java</p><li><span class="bar barthree"></span></li></div>
+								<div><p> C/C#</p><li><span class="bar bartwo"></span></li></div>
+								<div><p> Javascript</p><li><span class="bar barthree"></span></li></div>
+
+							</ul></div><div class="content">
+								<h2>Experienced iOS and Web Developer</h2>
+								<p>Programming for more than 5 years, I'm a Multi-linguistical Developer, skilled in numerous languages
+									including Swift, Python, HTML, CSS, Javascript, Angular JS, Java, Objective-C, C#, and C.
+								</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/udemy3.png" alt="" /></div><div class="content">
+								<h2>Renowned Programming Instructor</h2>
+								<p>I currently teach over <a href="https://www.udemy.com/user/avinashjain5/" class="hvr-underline-from-center"><b>50,000 happy students</b></a> programming topics varying from Python and Django to Apple Watch Development. I've received more than a 1000 5-Star reviews, and generated $10,000+ in income. </p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/speech1.jpg" alt="" /></div><div class="content">
+								<h2>Won Numerous Accolades</h2>
+								<ul>
+					<li>2nd Place Overall at MenloHacks - $200,  Best Use of AWS - 1 TB HD (CodeCollab)</li>
+                                    <li>2nd Place in Entrepreneurship Business Plan (DECA) - $300 Scholarship + Competing in International Event</li>
+                                    <li>Synopsys Science Fair Winner - $80 Grant, 5th Place in ACM Award</li>
+                                    <li>3rd Place in Spontaneous Speaking (Open) - Las Vegas, NV</li>
+                                </ul>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Projects</h2>
+								<p>Here are some of my best projects. A variety of iPhone + Web Apps </p>
+                            </header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o" id = "box1">
+
+									<a href="http://devpost.com/software/crimson-gln58f" target="_blank" ><h3>Crimson</h3></a>
+									<p>Revolutionizing Online Reading though Audio and Voice Controll. Using a Google App Engine Server, select content is parsed through Python from sites and read out. Utilized numerous frameworks - IBM Bluemix for Text-To-Speech, OpenEars for Voice Control and Recognition and Parse for the backend databse to store user articles.</p>
+								</li>
+								<li class="icon fa-money">
+                                    <a href="http://devpost.com/software/crimson-gln58f" target="_blank" ><h3>PunchIt (Yelp Hack)</h3></a>
+									<p> A loyalty system for Restaurants to reward customers. Concept of PunchPoints and PunchCard - Cashier scans User's QR Code to update/redeem points. Firebase Backend used to store User/Restaurant Data, Yelp API utilized for finding Restaurants. Also built website to display analytics and data to Merchant. </p>
+								</li>
+								<li class="icon fa-code">
+                                    <a href="http://devpost.com/software/http://devpost.com/software/a2b-zvuj71" target="_blank" ><h3>A2B (SVHacks)</h3></a>
+									<p>Price-Comparison service that compares time + price of ride-sharing apps, taxis, bus, etc. to get the best way from Point A to B. Utilized Uber API + Google Maps API to display map, get address and track distance + fare. Build both iOS and Web App, that performs same function.</p>
+								</li>
+								<li class="icon fa-volume-up">
+									<a href="https://itunes.apple.com/us/app/impromptu-topic-generator/id1066113653?mt=8" target="_blank"><h3>Impromptu Topics</h3></a>
+                                    <p>Developed app for Speech Team - Parses online websites for topics, generating random ones every time. iPhone app having a friendly and easy to use UI. 3 different categories, Concrete Nouns, Abstract Nouns & Quotes - Tracks Prep time and Speaking time in-app. Over 300 downloads in the App Store.</p>
+								</li>
+								<li class="icon fa-file-movie-o">
+									<a href="https://itunes.apple.com/us/app/movie-finder!/id1063075532?mt=8" target="_blank"><h3>Movie Finder</h3></a>
+                                    <p>Created a simple iPhone app to parse IMDB for specific movies. Enter in different search critera - Actor/Actress Name, Year Acted, Nominations and Genre - App will return with a list of movies fitting those requirements. Over 300 downloads in the App Store, with positive feedback.</p>
+								</li>
+								<li class="icon fa-cutlery">
+									<a href="#"><h3>Junkies</h3></a>
+									<p>Developed iPhone app to find nearest fast food location of specific choice. Utilized custom table views and Apple's Geolocation and Maps to get route + current location. Tells distance, directions, and address of location. Built Apple Watch counterpart with your 4 favorite Restaurants. </p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Contact</h2>
+								<p>Please contact me with any work, hackathons or internships.</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="mailto:avinashkalpitjain@gmail.com" target="_blank" class="button fit special">Email</a></li>
+								<li><a href="https://www.linkedin.com/in/avinashj1" target="_blank" class="button fit">LinkedIn</a></li>
+
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+                            <li><a href="https://www.linkedin.com/in/avinashj1" target="_blank"><span class="icon fa-linkedin"></span></a></li>
+                            <li><a href="https://github.com/TheCurryMan" target="_blank"><span class="icon fa-github"></span></a></li>
+                            <li><a href="resume.html" target="_blank"><span class="icon fa-file-text"></a></li>
+                            <li><a href="mailto:avinashkalpitjain@gmail.com" target="_blank"><span class="icon fa-envelope"></span></a></li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; Avinash Jain</li>
+                            <li>Made with <a href="#" class="icon fa-heart-o"><span class="label">heart</span> in california</a></li>
+                        </ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
